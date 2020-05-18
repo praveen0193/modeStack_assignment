@@ -90,8 +90,6 @@ public class ArticleRestController {
 
 	@RequestMapping(value = "/fetchArticlesByPage", method = RequestMethod.GET)
 	public List<Article> fetchArticlesByPage(@RequestParam("page") int page, @RequestParam("size") int size) {
-		Response response = new Response();
-		List<ArticleDTO> article = new ArrayList<ArticleDTO>();
 
 		Pageable paging = PageRequest.of(page, size);
 		try {

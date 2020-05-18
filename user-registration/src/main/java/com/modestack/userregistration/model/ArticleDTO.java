@@ -19,8 +19,6 @@ public class ArticleDTO implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 201343428323626614L;
-	@Id
-	@GeneratedValue
 	private Long id;
 	private String title;
 	private String body;

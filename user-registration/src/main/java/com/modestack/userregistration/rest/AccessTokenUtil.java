@@ -32,7 +32,7 @@ public class AccessTokenUtil {
 
 	public static SecretKey getSecretEncryptionKey() throws Exception {
 		KeyGenerator generator = KeyGenerator.getInstance("AES");
-		generator.init(128); // The AES key size in number of bits
+		generator.init(128);
 		SecretKey secKey = generator.generateKey();
 		return secKey;
 	}

@@ -34,7 +34,7 @@ public class UserRestController {
 			user.setAccessToken(accessToken);
 			userRepository.save(user);
 		} catch (Exception e) {
-
+			System.out.println("Exception occurred:" + e);
 		}
 
 		response.setErrorCode("00");
@@ -62,7 +62,7 @@ public class UserRestController {
 				response.setErrorMesage("SUCCESS");
 			}
 		} catch (Exception e) {
-
+			System.out.println("Exception occurred:" + e);
 		}
 
 		return response;
